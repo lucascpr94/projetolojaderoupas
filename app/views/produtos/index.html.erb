@@ -1,0 +1,18 @@
+ <table>
+  <thead>
+   <tr>
+    <th>Nome</th>
+	  <th>Descricao</th>
+	  <th>Preço</th>
+	  <th>Quantidade</th>
+   </tr>
+  </thead>
+  <tbody>
+    <% @produtos_por_nome.each do |produtos| %>
+    <tr>
+      <td><%= produtos.nome %></td>
+      <td><%= produtos.descricao %> </td>
+      <td><%= produtos.preco %> </td>
+      <td><%= produtos.quantidade %> </td>
+    </tr>
+    <% end %>
