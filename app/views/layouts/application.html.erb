@@ -10,7 +10,12 @@
 
   <body>
     <div class="container">
-        <%= nav_bar brand: 'The Cardoso', brand_link: root_url %>
+
+        <%= nav_bar brand: "The Cardosos" do %>
+    <%= menu_group do %>
+        <%# menu_item "Início", root_url %>
+        <%= menu_item "Novo Produto", "/produtos/new" %>
+        <% end %> <% end %>
     <%= yield %>
     </div>
   </body>
